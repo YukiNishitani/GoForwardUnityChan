@@ -30,7 +30,7 @@ public class CubeController : MonoBehaviour {
 	}
 	//衝突時に呼ばれる関数
     void OnCollisionEnter2D(Collision2D other){
-		if(other.transform.tag == "Cube"){
+		if(other.transform.tag == "Cube" || other.transform.tag == "ground"){
 			audioSource.Play();
 		}
 
